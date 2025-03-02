@@ -128,15 +128,13 @@ inline void bitbang_pwm_cycle(uint8_t bri)
 // our run loop. 
 void main(void)
 {
-    // Used as LED state machine control variable
-    char _led_state = 0;
-
     ADCON0bits.ADON = 0;    // Turn off the ADC
     ANSELbits.ANS = 0;      // Make all inputs digital
     VRCON = 0;              // Turn off the internal voltage reference
     CMCON = 0x7;            // Turn off the comparator
 
     // Set up our I/O pins for the circuit. 
+    POWER_LED = 0;          // Turn off output BIT before enabling port
     TRISIObits.TRISIO0 = 0; // Make GPIO0 an output - LED
     TRISIObits.TRISIO1 = 1; // Make GPIO1 an input - MUTING_READY
     TRISIObits.TRISIO2 = 1; // Make GPIO2 an input - AC_SENSE
@@ -147,10 +145,8 @@ void main(void)
     // Keep track of the last input state
     // Last input state, initialize assuming we are muting to start with 
     uint8_t last_state = MUTING_ON;
-    // The current brightness thats been set, initially set to MAX_BRIGHTNESS
-    // the main loop will ramp its current LED brightness to this value, either
-    // up or down as required. 
-    uint8_t set_brightness = MAX_BRIGHTNESS; 
+    // The current brightness thats been set, initially set to 0
+    uint8_t set_brightness = 0; 
     
     // The current LED brightness. The loop will incrementally change this
     // to reach the set_brightness value. 
