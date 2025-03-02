@@ -40,7 +40,7 @@ and back lights with LEDs take away from that experience erroding the authentici
 equipment, so this project, for the cost of a handful of cheap and easy to get components
 solves all of these problems. 
 
-## What This For?
+## What is this for?
 
 This project was created to use as part of a restoration of a Pioneer SPEC-1 Pre-amplifier made
 in the early 197's. The indicator lamp on the front pannel is a bulb, and so the goal was to 
@@ -51,6 +51,11 @@ and cool down dimming that you would perceive in a lightbulb.  This concept thou
 to any scenario where you want to replace a "bulb" type indicator light or backlight with a 
 modern LED equivelent. 
 
+## Who is this for?
+
+Anyone that wants to use LEDs as modern replacement for bulbs in vintage equipment and, crucially
+who also has more time on their hands to fiddle about this sort of stuff :)  It can seem like
+getting another bulb would be easier - but where is the fun in that hey...
 
 ## Audio Muting Indicator 
 
