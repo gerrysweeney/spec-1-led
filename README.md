@@ -39,7 +39,7 @@ the LED with a PWM signical that ramps up/down the current to the LED, simulatin
 and cool down dimming that you would perceive in a lightbulb.
 
 
-## Miting Indicator 
+## Audio Muting Indicator 
 
 As a secondary feature, the Pioneer SPEC-1/C77 preamp includes what they refer to in the manual
 as a "muting" circuit.  Because the preamp works internally on +/-48V it takes a little while for
