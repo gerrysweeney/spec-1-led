@@ -4,6 +4,9 @@ Its purpose is to enable to you use a modern LED in place of a "bulb" but simula
 of the bulb warnming up/cooling down which is typical of lamp based indicators on vintage equipment. 
 I created this project as part of the restoration I did on a Pioneer SPEC-1 / C77 early 70's preamp. 
 
+## Schematic
+[SPEC-1 LED] ](https://github.com/gerrysweeney/spec-1-led/blob/main/docs/spec-1-led-schematic.png?raw=true)
+
 ## Overview
 
 When restoring old audio (or any vintage) equipment, one of the unreliable components of vintage 
