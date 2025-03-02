@@ -1,10 +1,10 @@
-== What is this? ==
+## What is this?
 This is a simple microcontroller project to control a Power On LED for use in vintage audio equipment. 
 Its purpose is to enable to you use a modern LED in place of a "bulb" but simulate the visual aspects
 of the bulb warnming up/cooling down which is typical of lamp based indicators on vintage equipment. 
 I created this project as part of the restoration I did on a Pioneer SPEC-1 / C77 early 70's preamp. 
 
-== Overview ==
+## Overview
 
 When restoring old equipment, one of the unreliable components of vintage audio equipment is the common
 use of filiment lamps.  These power hungry devices work by passing current through a wire in aglass 
@@ -38,6 +38,9 @@ a lamp when turned on/off.  In simple terms this means a small mcirocontroller i
 the LED with a PWM signical that ramps up/down the current to the LED, simulating the warm up
 and cool down dimming that you would perceive in a lightbulb.
 
+
+## Miting Indicator 
+
 As a secondary feature, the Pioneer SPEC-1/C77 preamp includes what they refer to in the manual
 as a "muting" circuit.  Because the preamp works internally on +/-48V it takes a little while for
 the power supplies and preamp circuitry to stablise.  If this was connected to an amplifier that
@@ -52,5 +55,7 @@ muting the output, the power LED shows a periodic short double-pulse, to show th
 active.  This of course is not what the orginal Lamp did, so this does modernise it.  If you do 
 not want to use this you can simply tie the input pin to ground and this will be disabled. 
 
+## Hardware / Environment / Tools
 
-Project is built using MPLAP-X IDE and XC8 compiler from Microchip targeting the part PIC12F675.
+Project is built using MPLAP-X IDE and XC8 compiler in "C", the Microchip ecosystem, argeting 
+the Microchip low cost 8-pin part PIC12F675.
