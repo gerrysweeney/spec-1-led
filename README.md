@@ -6,14 +6,13 @@ I created this project as part of the restoration I did on a Pioneer SPEC-1 / C7
 
 ## Overview
 
-When restoring old equipment, one of the unreliable components of vintage audio equipment is the common
-use of filiment lamps.  These power hungry devices work by passing current through a wire in aglass 
-envleope, commonly knon as a "bulb".  While these are still widely available, many prefer to swap 
-these out for modern LED's which are more reliable, energy efficient and have a longer service life.
+When restoring old audio (or any vintage) equipment, one of the unreliable components of vintage 
+audio equipment is the common use of filiment lamps.  These power hungry devices work by passing 
+current through a wire in a glass envleope, commonly knon as a "bulb".  While these are still 
+widely available, many prefer to swap these out for modern LED's which are more reliable, energy
+efficient and have a longer service life.
 
-One of the problems with LEDs is unlike a vinagte builb that task a few hundred miliseconds to warm 
-up to full brightness, LEDs are instantly on. As you can perceive the "warming up" of a bulb 
-visually, then replcing these builbs with a LED can exhibit differences that can also be perceived. 
+There are issues with using LEDs as a modern alternatibve to a bulb, including: 
 
 - Unlike a bulb which takes time to light up, perceived as a quickly ramping up light 
   output, an LED is instant on.. and this can be perceived and seems more clinical.
@@ -26,17 +25,31 @@ visually, then replcing these builbs with a LED can exhibit differences that can
   tech would connect to one of the DC rails with an appropriate resistor to limit current and
   thats it.  The problem with that is, if those DC rails are held up after power down by the
   PSU smoothing caps, this will alse keep the LED showing light when the original bulb would have
-  long since extinguidhed. 
+  long since extinguidhed.
+- Unsurprisingly, not all vintage equiment is over-engineered, so expensive ares, like the PSU
+  in an audio amplifier for exmaple, can be under=specified (or overloaded).  If you are powering
+  a lamp indicator from a secondary transformer winding, the slow response time to power overloads
+  such as a saturiting transformer as music is played at high volume, these fluxuations would not
+  appear visually when using a lamp type indicator. However, LED's are much more responsivle and
+  in this scenario your LED indivator could adopt a new persona as a "disco light", which is all
+  very entertaining (for about a second) but the equipment is no longer working how it should,
+  as a Lamp would no exhibit this behaviour. 
 
 For anyone that appreciates vintage equipment for its asthetics, sometimes replacing indicators
-and back lights with LEDs take away from that experience. 
+and back lights with LEDs take away from that experience erroding the authenticity of the 
+equipment, so this project, for the cost of a handful of cheap and easy to get components
+solves all of these problems. 
+
+## What This For?
 
 This project was created to use as part of a restoration of a Pioneer SPEC-1 Pre-amplifier made
 in the early 197's. The indicator lamp on the front pannel is a bulb, and so the goal was to 
 replace that with a modern 3mm ultra bright white LED, but to have that LED visually look like
 a lamp when turned on/off.  In simple terms this means a small mcirocontroller is used to drive
 the LED with a PWM signical that ramps up/down the current to the LED, simulating the warm up
-and cool down dimming that you would perceive in a lightbulb.
+and cool down dimming that you would perceive in a lightbulb.  This concept though applies 
+to any scenario where you want to replace a "bulb" type indicator light or backlight with a 
+modern LED equivelent. 
 
 
 ## Audio Muting Indicator 
